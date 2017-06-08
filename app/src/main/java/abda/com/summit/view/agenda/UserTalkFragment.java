@@ -72,4 +72,6 @@ public class UserTalkFragment extends Fragment implements Listener{
     public void finish() {
         Snackbar.make(mView, "Charla removida de agenda.", Snackbar.LENGTH_SHORT).show();
     }
+
+
 }

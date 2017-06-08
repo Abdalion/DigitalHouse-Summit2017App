@@ -1,5 +1,6 @@
 package abda.com.summit.view.main;
 
+import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.gson.Gson;
 
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        final Button agendaBtn = (Button) findViewById(R.id.main_agendaBtn);
+        final ImageButton agendaBtn = (ImageButton) findViewById(R.id.main_agendaBtn);
         agendaBtn.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button charlasBtn = (Button) findViewById(R.id.main_charlasBtn);
+        ImageButton charlasBtn = (ImageButton) findViewById(R.id.main_charlasBtn);
         charlasBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,18 +84,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        Button speakersBtn = (Button) findViewById(R.id.main_speakersBtn);
-        speakersBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SpeakersActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
 
     }
 
@@ -112,5 +102,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
     }
+
+/*    private void addShortcut() {
+        //Adding shortcut for MainActivity
+        //on Home screen
+        Intent shortcutIntent = new Intent(getApplicationContext(),
+                MainActivity.class);
+
+        shortcutIntent.setAction(Intent.ACTION_MAIN);
+
+        Intent addIntent = new Intent();
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getResources().getString(R.string.app_name));
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.logo_image));
+        addIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+        addIntent.putExtra("duplicate", false);  //may it's already there so don't duplicate
+        getApplicationContext().sendBroadcast(addIntent);
+    }*/
 
 }

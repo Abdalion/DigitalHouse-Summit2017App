@@ -40,7 +40,7 @@
             android:background="?attr/colorPrimary"
             android:elevation="4dp"
             app:titleTextColor="#ffffff"
-            android:backgroundTint="#ffb300"
+            android:backgroundTint="#F0002F"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 

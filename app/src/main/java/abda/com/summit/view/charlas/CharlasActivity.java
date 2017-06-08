@@ -1,5 +1,6 @@
 package abda.com.summit.view.charlas;
 
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,5 +27,10 @@ public class CharlasActivity extends AppCompatActivity {
                 .beginTransaction()
                 .replace(R.id.charlas_container, new TalksFragment())
                 .commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        NavUtils.navigateUpFromSameTask(this);
     }
 }
