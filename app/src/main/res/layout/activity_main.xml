@@ -14,7 +14,6 @@
         android:layout_weight="60"
         android:id="@+id/main_banner_ly">
 
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,11 +32,14 @@
             android:layout_weight="1"
             android:textColor="#ffff"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:text="Twitter"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2.5dp"
+            android:text="Charlas"
             android:textSize="25dp"
             android:background="#56B9C7"
-            android:id="@+id/main_twitterBtn"
+            android:id="@+id/main_charlasBtn"
             />
 
         <Button
@@ -45,7 +47,10 @@
             android:layout_weight="1"
             android:textColor="#ffff"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2.5dp"
             android:text="Mi agenda"
             android:textSize="25dp"
             android:background="#ffb300"
@@ -63,7 +68,10 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="5dp"
             android:text="Speakers"
             android:textSize="25dp"
             android:textColor="#ffff"
@@ -75,12 +83,15 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:text="Premios"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Digital  house"
             android:textColor="#ffff"
             android:textSize="25dp"
             android:background="#EF5350"
-            android:id="@+id/main_premiosBtn"
+            android:id="@+id/main_digitalBtn"
             />
 
     </LinearLayout>

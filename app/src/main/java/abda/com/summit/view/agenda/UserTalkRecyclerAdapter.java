@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import abda.com.summit.Listener;
 import abda.com.summit.R;
 import abda.com.summit.controller.TalkController;
 import abda.com.summit.model.Talk;
@@ -21,15 +22,18 @@ public class UserTalkRecyclerAdapter extends RecyclerView.Adapter{
 
     private List<Talk> mTalkList;
     private Context mContext;
+    private Listener mRemoveListener;
+
 
     public List<Talk> getmTalkList() {
         return mTalkList;
     }
 
 
-    public UserTalkRecyclerAdapter(List<Talk> mailList, Context context) {
-        this.mTalkList = mailList;
+    public UserTalkRecyclerAdapter(List<Talk> mailList, Context context, Listener removeListener) {
+        mTalkList = mailList;
         mContext = context;
+        mRemoveListener = removeListener;
     }
 
     @Override
@@ -51,6 +55,7 @@ public class UserTalkRecyclerAdapter extends RecyclerView.Adapter{
                 new TalkController().removeFromFavoriteTalks(mTalkList.get(position).getID(), mContext);
                 mTalkList.remove(position);
                 notifyDataSetChanged();
+                mRemoveListener.finish();
             }
         });
     }

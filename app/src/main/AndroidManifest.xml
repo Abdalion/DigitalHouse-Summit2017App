@@ -21,7 +21,10 @@
         <activity
             android:name=".view.agenda.AgendaActivity"
             android:parentActivityName=".view.main.MainActivity" />
-        <activity android:name=".view.speakers.SpeakersActivity"></activity>
+        <activity android:name=".view.speakers.SpeakersActivity"
+            android:parentActivityName=".view.main.MainActivity"/>
+        <activity android:name=".view.charlas.CharlasActivity"
+            android:parentActivityName=".view.main.MainActivity"></activity>
     </application>
 
 </manifest>

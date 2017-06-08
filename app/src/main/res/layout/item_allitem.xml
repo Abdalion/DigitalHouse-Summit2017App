@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/item_aula"
+                android:id="@+id/item_tema"
                 android:layout_toRightOf="@+id/item_hora"
                 android:layout_alignParentTop="true"
                 android:textSize="30sp"
@@ -38,9 +38,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/item_tema"
+                android:id="@+id/item_aula"
                 android:layout_toRightOf="@+id/item_hora"
-                android:layout_below="@+id/item_aula"
+                android:layout_below="@+id/item_tema"
                 />
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/item_speaker"
                 android:layout_alignLeft="@+id/item_tema"
-                android:layout_below="@+id/item_tema"
+                android:layout_below="@+id/item_aula"
                 />
 
             <Button

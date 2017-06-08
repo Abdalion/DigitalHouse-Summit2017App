@@ -1,6 +1,7 @@
-package abda.com.summit.view.agenda;
+package abda.com.summit.view.charlas;
 
 import android.content.Context;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import abda.com.summit.Listener;
 import abda.com.summit.R;
 import abda.com.summit.controller.TalkController;
 import abda.com.summit.model.Talk;
@@ -23,14 +25,16 @@ public class TalkRecyclerAdapter extends RecyclerView.Adapter {
 
     private List<Talk> mTalkList;
     private Context mContext;
+    private Listener mAddListener;
 
     public List<Talk> getmTalkList() {
         return mTalkList;
     }
 
-    public TalkRecyclerAdapter(List<Talk> mailList, Context context) {
-        this.mTalkList = mailList;
+    public TalkRecyclerAdapter(List<Talk> mailList, Context context, Listener addListener) {
+        mTalkList = mailList;
         mContext = context;
+        mAddListener = addListener;
     }
 
     @Override
@@ -77,13 +81,15 @@ public class TalkRecyclerAdapter extends RecyclerView.Adapter {
             speakerTextView.setText(talk.getSpeaker());
             if(talk.getIsFavorite()) {
                 addBtn.setVisibility(View.INVISIBLE);
+            }else{
+                addBtn.setVisibility(View.VISIBLE);
             }
             addBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     new TalkController().addFavoriteTalk(talk.getID(), mContext);
                     addBtn.setVisibility(View.INVISIBLE);
-                    Log.d("added", "added talk");
+                    mAddListener.finish();
                 }
             });
         }

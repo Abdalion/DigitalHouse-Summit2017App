@@ -24,10 +24,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import abda.com.summit.controller.TalkController;
+import abda.com.summit.model.Speaker;
 import abda.com.summit.model.Talk;
 import abda.com.summit.model.Talks;
 import abda.com.summit.view.agenda.AgendaActivity;
 import abda.com.summit.R;
+import abda.com.summit.view.charlas.CharlasActivity;
+import abda.com.summit.view.speakers.SpeakersActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -55,15 +58,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-/*        Button twitterBtn = (Button) findViewById(R.id.main_twitterBtn);
-        agendaBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TwitterActivity.class);
-                startActivity(intent);
-            }
-        });*/
-
         Button agendaBtn = (Button) findViewById(R.id.main_agendaBtn);
         agendaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,8 +67,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-/*        Button speakersBtn = (Button) findViewById(R.id.main_speakersBtn);
-        agendaBtn.setOnClickListener(new View.OnClickListener() {
+        Button charlasBtn = (Button) findViewById(R.id.main_charlasBtn);
+        charlasBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CharlasActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button speakersBtn = (Button) findViewById(R.id.main_speakersBtn);
+        speakersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SpeakersActivity.class);
@@ -82,14 +85,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button premiosBtn = (Button) findViewById(R.id.main_premiosBtn);
-        agendaBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PremiosActivity.class);
-                startActivity(intent);
-            }
-        });*/
+
+
 
     }
 

@@ -145,6 +145,27 @@ import abda.com.summit.model.Talk;
             return talk;
         }
 
+    public List<Talk> getTalksBySpeaker(String speaker) {
+
+            String selectQuery = "SELECT * FROM " + TABLENAME + " WHERE "+ SPEAKER +" = " + "\"" + speaker + "\" " + " ORDER BY " + VALUE + " ASC";
+
+            //PIDO UNA CONEXION A LA BASE DE DATOS
+            SQLiteDatabase database = getReadableDatabase();
+
+            Cursor cursor = database.rawQuery(selectQuery, null);
+            List<Talk> talkList = new ArrayList<>();
+
+            while(cursor.moveToNext()){
+
+                Talk talk = getTalk(cursor);
+                talkList.add(talk);
+            }
+
+            cursor.close();
+            database.close();
+            return talkList;
+    }
+
     /*        public Talk getPersonFromDatabase(Integer id){
 
                 String selectQuery =

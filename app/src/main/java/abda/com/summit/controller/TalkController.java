@@ -38,5 +38,9 @@ public class TalkController {
         talkDAO.addTalk(talk, context);
     }
 
+    public List<Talk> getTalksBySpeaker(String speaker, Context context) {
+        return new TalkDAO().getTalksBySpeaker(speaker, context);
+    }
+
 
 }

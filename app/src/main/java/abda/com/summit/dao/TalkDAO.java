@@ -34,5 +34,9 @@ public class TalkDAO {
         new TalkDBhelper(context).removeFromFavorites(id);
     }
 
+    public List<Talk> getTalksBySpeaker(String speaker, Context context) {
+        return new TalkDBhelper(context).getTalksBySpeaker(speaker);
+    }
+
 
 }
