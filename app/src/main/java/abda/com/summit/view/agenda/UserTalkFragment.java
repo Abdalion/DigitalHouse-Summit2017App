@@ -1,6 +1,8 @@
 package abda.com.summit.view.agenda;
 
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -16,6 +18,8 @@ import abda.com.summit.Listener;
 import abda.com.summit.R;
 import abda.com.summit.controller.TalkController;
 import abda.com.summit.model.Talk;
+import abda.com.summit.view.charlas.CharlasActivity;
+import abda.com.summit.view.main.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +27,7 @@ import abda.com.summit.model.Talk;
 public class UserTalkFragment extends Fragment implements Listener{
 
     View mView;
+
 
     public UserTalkFragment() {
         // Required empty public constructor
@@ -34,8 +39,23 @@ public class UserTalkFragment extends Fragment implements Listener{
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_talk_editor, container, false);
         mView = view;
+        view.findViewById(R.id.agendar_ir_agendaBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CharlasActivity.class);
+                startActivity(intent);            }
+        });
+
         TalkController talkController = new TalkController();
         List<Talk> talks = talkController.getFavoriteTalks(this.getContext());
+        if(talks.size() != 0) {
+            view.findViewById(R.id.agendaVacia_tv).setVisibility(View.INVISIBLE);
+            view.findViewById(R.id.agendar_ir_agendaBtn).setVisibility(View.INVISIBLE);
+        }
+        else {
+            view.findViewById(R.id.agendaVacia_tv).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.agendar_ir_agendaBtn).setVisibility(View.VISIBLE);
+        }
 
         RecyclerView rv = (RecyclerView)view.findViewById(R.id.user_recycler_view);
         rv.setHasFixedSize(true);

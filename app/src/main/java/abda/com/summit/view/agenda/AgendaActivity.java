@@ -1,6 +1,8 @@
 package abda.com.summit.view.agenda;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,10 +11,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import abda.com.summit.Listener;
 import abda.com.summit.R;
 import abda.com.summit.controller.TalkController;
+import abda.com.summit.view.charlas.CharlasActivity;
 
-public class AgendaActivity extends AppCompatActivity {
+public class AgendaActivity extends AppCompatActivity implements Listener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +40,21 @@ public class AgendaActivity extends AppCompatActivity {
                     .replace(R.id.agenda_container, new UserTalkFragment())
                     .commit();
         }
-        else {
-            Toast.makeText(this, "No hay charlas disponibles!", Toast.LENGTH_SHORT).show();
-        }
+
+
 
     }
+
+
+    @Override
+    public void finish() {
+        Intent intent = new Intent(this, CharlasActivity.class);
+        startActivity(intent);
+    }
+
+
+
+
+
+
 }
