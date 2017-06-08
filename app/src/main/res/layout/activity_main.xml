@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="abda.com.summit.view.main.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:id="@+id/main_banner_ly">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25">
+        
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Twitter"
+            android:textSize="25dp"
+            android:background="#56B9C7"
+            android:id="@+id/main_twitterBtn"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Mi agenda"
+            android:textSize="25dp"
+            android:background="#ffb300"
+            android:id="@+id/main_agendaBtn"
+            />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Speakers"
+            android:textSize="25dp"
+            android:textColor="#ffff"
+            android:background="#81C784"
+            android:id="@+id/main_speakersBtn"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Premios"
+            android:textColor="#ffff"
+            android:textSize="25dp"
+            android:background="#EF5350"
+            android:id="@+id/main_premiosBtn"
+            />
+
+    </LinearLayout>
+    
+
+
+</LinearLayout>

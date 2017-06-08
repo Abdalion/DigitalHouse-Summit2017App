@@ -1,0 +1,232 @@
+{
+  "talks": [{
+    "horaInicio": "9:15",
+    "tema": "Transformación digital.",
+    "aula": "Auditorio",
+    "value": 915,
+    "speaker": "Federico Procaccini. CEO de Google"
+  },
+    {
+      "horaInicio": "10:00",
+      "tema": "Inteligencia Artificial desde Cognitive y Big Data",
+      "aula": "Auditorio",
+      "value": 1000,
+      "speaker": "Haldo Sponton, Gonzalo Zarza y Juan José López Murphy. Globant"
+    },
+    {
+      "horaInicio": "10:45",
+      "tema": "Del garage a Wall Street en zapatillas. El caso Netshoes",
+      "aula": "Auditorio",
+      "value": 1045,
+      "speaker": "Alberto Calvo. Gerente General Netshoes"
+    },
+    {
+      "horaInicio": "11:30",
+      "tema": "La evolución del user experience, monetización y marketing digital en clasificados online",
+      "aula": "Auditorio",
+      "value": 1130,
+      "speaker": "Facundo Sosa - Content Marketing Manager,Carla Lanzillotta- Head of Ad Sales and Operations OLX América Latina y Marcos Navarro - Android Lead.OLX"
+    },
+    {
+      "horaInicio": "12:15",
+      "tema": "Tendencias y oportunidades en eCommerce",
+      "aula": "Auditorio",
+      "value": 1215,
+      "speaker": "Diego Urfeig. Director CACE"
+    },
+    {
+      "horaInicio": "14:30",
+      "tema": "Introducción al emprendedurismo",
+      "aula": "Auditorio",
+      "value": 1430,
+      "speaker": "María Julia Bearzi. Directora ejecutiva de Endeavor"
+    },
+    {
+      "horaInicio": "15:30",
+      "tema": "Watson para agilizar la interacción con los clientes",
+      "aula": "Auditorio",
+      "value": 1530,
+      "speaker": "Roman A. Zambrano Rondon. IBM"
+    },
+    {
+      "horaInicio": "16:15",
+      "tema": "Emprender a pesar de todo. Federico Manzuoli y Andrés Gorostiaga",
+      "aula": "Auditorio",
+      "value": 1615,
+      "speaker": "Socios fundadores. Guapaletas"
+    },
+    {
+      "horaInicio": "9:30",
+      "tema": "Why DevOps?",
+      "aula": "Aula 1",
+      "value": 930,
+      "speaker": "Rafael Aguilar, Configuration Manager en DataArt Argentina."
+    },
+    {
+      "horaInicio": "10:30",
+      "tema": "Introducción a la Internet de las Cosas (IoT) y las aplicaciones que realmente importan.",
+      "aula": "Aula 1",
+      "value": 1030,
+      "speaker": "Ezequiel Zeff, Project Manager en DataArt Argentina"
+    },
+    {
+      "horaInicio": "11:30",
+      "tema": "De objetivos a ideas, de ideas a producción.",
+      "aula": "Aula 1",
+      "value": 1130,
+      "speaker": "Pedro García. DPM en Despegar"
+    },
+    {
+      "horaInicio": "12:00",
+      "tema": "Construir, aprender y compartir en 3 dimensiones.",
+      "aula": "Aula 1",
+      "value": 1200,
+      "speaker": "Gonzalo Agrimbau, Mariano Pellegrino. Protos"
+    },
+    {
+      "horaInicio": "12:30",
+      "tema": "Video Marketing: el futuro del content marketing.",
+      "aula": "Aula 1",
+      "value": 1230,
+      "speaker": "Leo Villasmil. Digital House"
+    },
+    {
+      "horaInicio": "14:30",
+      "tema": "Las mujeres en el cruce de la tecnología con la información.",
+      "aula": "Aula 1",
+      "value": 1430,
+      "speaker": "Ana Soffietto. Media Chicas"
+    },
+    {
+      "horaInicio": "15:00",
+      "tema": "Biohackers y Cyborgs, una realidad.",
+      "aula": "Aula 1",
+      "value": 1500,
+      "speaker": "Marcelo Trejo. Animaco"
+    },
+    {
+      "horaInicio": "15:30",
+      "tema": "Alternativas de desarrollo mobile.",
+      "aula": "Aula 1",
+      "value": 1530,
+      "speaker": "Ignacio Barrea. Digital House"
+    },
+    {
+      "horaInicio": "16:00",
+      "tema": "Dirección de arte en medios digitales. La relación directa entre la comunicación visual, y la respuesta inmediata que exige la venta online.",
+      "aula": "Aula 1",
+      "value": 1600,
+      "speaker": "Esteban Rodriguez. Art Director. Glamit"
+    },
+    {
+      "horaInicio": "9:30",
+      "tema": "Implementando la Arquitectura de un Juego Multiplataforma: Caso Reinos Preguntados.",
+      "aula": "Aula 2",
+      "value": 930,
+      "speaker": "Juan Jaime, Senior Software Engineer de Etermax"
+    },
+    {
+      "horaInicio": "10:30",
+      "tema": "Preguntados: cómo manejamos 25 millones de usuarios diarios, experiencias y guía de supervivencia.",
+      "aula": "Aula 2",
+      "value": 1030,
+      "speaker": "Martín Domínguez, CIO de Etermax"
+    },
+    {
+      "horaInicio": "11:30",
+      "tema": "Introducción a redes neuronales con Arduino.",
+      "aula": "Aula 2",
+      "value": 1130,
+      "speaker": "Konrad Peschka. Educabot"
+    },
+    {
+      "horaInicio": "12:30",
+      "tema": "Travel Tech: Los viajes y la tecnología: un mundo de oportunidades.",
+      "aula": "Aula 2",
+      "value": 1230,
+      "speaker": "Martin Luna. Amadeus"
+    },
+    {
+      "horaInicio": "14:30",
+      "tema": "Internet de las Cosas: Desarrollo local y tendencias actuales.",
+      "aula": "Aula 2",
+      "value": 1430,
+      "speaker": "Cristian Reynaga y Martin Rabaglia. Comunidad IoT Buenos Aires"
+    },
+    {
+      "horaInicio": "15:30",
+      "tema": "Seguridad informática. Galería de fallas de seguridad en unicornios.",
+      "aula": "Aula 2",
+      "value": 1530,
+      "speaker": "Andres Riancho. Consultor independiente"
+    },
+    {
+      "horaInicio": "16:30",
+      "tema": "Actualidad en la realidad virtual.",
+      "aula": "Aula 2",
+      "value": 1630,
+      "speaker": "Dalmiro Maggioli. Syncro"
+    },
+    {
+      "horaInicio": "9:30",
+      "tema": "Cómo promover tu startup sin morir en el intento.",
+      "aula": "Aula 3",
+      "value": 930,
+      "speaker": "Sebastián Siseles. Director de Freelancers"
+    },
+    {
+      "horaInicio": "10:30",
+      "tema": "Blockchain. La revolución de la confianza.",
+      "aula": "Aula 3",
+      "value": 1030,
+      "speaker": "Rodolfo Andragnes. Bitcoin Argentina"
+    },
+    {
+      "horaInicio": "11:15",
+      "tema": "11.15 El uso de los dispositivos móviles y cómo se navega en internet.",
+      "aula": "Aula 3",
+      "value": 1115,
+      "speaker": "Manuel Argentato. Google"
+    },
+    {
+      "horaInicio": "12:00",
+      "tema": "Las claves del marketing digital en 2017.",
+      "aula": "Aula 3",
+      "value": 1200,
+      "speaker": "Victor Estrugo Rottenstein. Digital House"
+    },
+    {
+      "horaInicio": "14:30",
+      "tema": " UIs Discursivas.",
+      "aula": "Aula 3",
+      "value": 1430,
+      "speaker": "Daniel de Sousa. Digital House"
+    },
+    {
+      "horaInicio": "15:00",
+      "tema": "Animaciones en la web.",
+      "aula": "Aula 3",
+      "value": 1500,
+      "speaker": "Javier Herrera. Digital House"
+    },
+    {
+      "horaInicio": "15:30",
+      "tema": "Realidad Virtual y Realidad Aumentada.",
+      "aula": "Aula 3",
+      "value": 1530,
+      "speaker": "Dario Susnisky. Digital House"
+    },
+    {
+      "horaInicio": "16:00",
+      "tema": "Ley de Emprendedores: Argentina se despierta, herramientas de financiamiento y armado del Dream Team.",
+      "aula": "Aula 3",
+      "value": 1600,
+      "speaker": " Manuel Tanoira. ASEA"
+    }
+
+
+  ]
+}
+
+
+

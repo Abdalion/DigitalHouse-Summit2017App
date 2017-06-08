@@ -1,0 +1,1 @@
+algunos elementos se les desactiva el boton verde sin ser fav.
