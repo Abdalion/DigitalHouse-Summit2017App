@@ -50,6 +50,6 @@ public class UserTalkFragment extends Fragment implements Listener{
 
     @Override
     public void finish() {
-        Snackbar.make(mView, "Charla removida", Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(mView, "Charla removida de agenda.", Snackbar.LENGTH_SHORT).show();
     }
 }

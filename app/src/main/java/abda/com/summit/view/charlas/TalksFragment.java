@@ -51,6 +51,6 @@ public class TalksFragment extends Fragment implements Listener{
 
     @Override
     public void finish() {
-        Snackbar.make(mView, "Charla agregada", Snackbar.LENGTH_SHORT).show();
+        Snackbar.make(mView, "Charla agendada.", Snackbar.LENGTH_SHORT).show();
     }
 }
