@@ -1,8 +1,11 @@
 package abda.com.summit.view.main;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,12 +61,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        Button agendaBtn = (Button) findViewById(R.id.main_agendaBtn);
+        final Button agendaBtn = (Button) findViewById(R.id.main_agendaBtn);
         agendaBtn.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AgendaActivity.class);
-                startActivity(intent);
+                View sharedView = agendaBtn;
+                String transitionName = getString(R.string.charlasTransition);
+                ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, sharedView, transitionName);
+                startActivity(intent, transitionActivityOptions.toBundle());
             }
         });
 
